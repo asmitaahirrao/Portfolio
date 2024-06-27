@@ -1,0 +1,250 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0e1013; 
+    color: #ffffff; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1f23; 
+    color: #ffa500; 
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+    nav ul li {
+        display: inline;
+    }
+
+        nav ul li a {
+            color: #ffa500; 
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background 0.3s;
+        }
+
+            nav ul li a:hover {
+                background: #ffa500; 
+                color: #1a1f23; 
+            }
+
+.quote {
+    margin-left: 1em;
+    text-align: center;
+    background-color: transparent; 
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+    .quote h2 {
+        font-family: 'Lobster', cursive;
+        font-size: 1.8em;
+        color: #ffa500; 
+        margin: 0;
+    }
+
+#home {
+    background: linear-gradient(to right, #0e1013 40%, #23476a 60%, #4ea1d3); 
+    padding: 4em 0;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 0em;
+}
+
+.intro h2 {
+    font-size: 4.5em;
+    margin-bottom: 0;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.profile-pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resume-button {
+    background: #ffa500; 
+    color: #1a1f23; 
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .resume-button:hover {
+        background: #d18900; 
+    }
+
+#about {
+    background: #1a1f23; 
+    color: #ffffff;
+    padding: 4em 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-left {
+    flex: 1;
+    margin-right: 3%;
+    text-align: justify;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.skills {
+    flex: 1;
+    margin-left: 5%;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+    .skill span {
+        flex: 0 0 100px;
+        text-align: left;
+    }
+
+.progress {
+    background: #2a2a2a; 
+    border-radius: 15px;
+    overflow: hidden;
+    height: 20px;
+    width: calc(100% - 110px);
+    margin-left: 1em;
+}
+
+.progress-bar {
+    height: 100%;
+    color: black;
+    text-align: center;
+    line-height: 20px;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    border-radius: 15px;
+    background: #ffa500; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proficient {
+    width: 95%;
+}
+
+.intermediate {
+    width: 85%;
+}
+
+#projects {
+    background: #0e1013; 
+    color: #ffffff;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 2em 0;
+}
+
+.project-item {
+    background: #1a1f23; 
+    padding: 1.5em;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(33% - 2em);
+}
+
+    .project-item h3 {
+        color: #ffa500; 
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .project-item p {
+        text-align: justify;
+    }
+
+    .project-item:hover {
+        transform: scale(1.05);
+    }
+
+#contact {
+    background: #1a1f23; 
+    color: #ffffff;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+    .contact-icons .icon {
+        width: 50px;
+        height: 50px;
+        filter: invert(100%);
+        transition: transform 0.3s;
+    }
+
+        .contact-icons .icon:hover {
+            transform: scale(1.1);
+        }
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #0e1013;
+    color: #ffa500; 
+}
